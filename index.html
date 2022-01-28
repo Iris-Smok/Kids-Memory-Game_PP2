@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="Fun memory game for kids!"/>
+      <meta name="keywords" content="kids memory game, memory, fun game, game, test your memory, fun">
+      <!-- font awesome and google fonts -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>Kids Memory Game!</title>
+   </head>
+  
+   <body>
+
+      <!--HEADER-->
+      <div class="img-background">
+         <header class="text-header" id="header">Kids Memory Game</header>
+         <a href="#play">
+            <span class="style" id="play-button">Play</span>
+         </a>
+         <button id = "modalBtn" class= "style" type="button">How to Play</button>
+         <div class="instructions" id="instructions">
+            <div>
+               <div>
+                  <h2 class="page-title">How to play:</h2>
+               </div>
+            </div>
+            <div class="instructions-wrapper">
+               <div>
+                  <div class = "newpost-text">
+                     <ol class="instructions-list">
+                        <li> To begin the game, click on any card to flip it over</li>
+                        <li>If the images are identical the cards will remain flipped <br>and you just pick another pair of cards</li>
+                        <li>Only two cards at a time can be flipped</li>
+                        <li> If the images are not identical, the cards will flip back</li>
+                        <li>Try to remember where to find the different images</li>
+                        <li> You need to find all 8 pairs to complete the game</li>
+                        <li>Restart the game and try beat your time or the number of moves taken!</li>
+                     </ol>
+                  </div>
+               </div>
+               <span id = "closeBtn">Close</span>
+            </div>
+         </div>
+         <div>
+         </div>
+         <section id="did-you-know">
+            <h3>Did you know? </h3>
+            <div id="wrapper-two">
+               <div id="wrapper">
+                  <div id = "more" class="section-style">
+                     <ul>
+                        <li><i class="fas fa-paw"></i> Playing memory games can improve other brain functions, such as attention, concentration, and focus. Memory games give space to critical thinking and that helps children nurture their attention to detail. </li>
+                        <li> <i class="fas fa-paw"></i>Short-term memory is key to playing memory games and playing them often will improve function in this area. A good short-term memory can improve a person's long-term memory too. </li>
+                        <li><i class="fas fa-paw"></i> Though memory games are a short-term boost, players have to plan their moves as they go. From revealing a card to plotting their next move, children can learn the importance of thinking ahead and plotting their next choice.</li>
+                     </ul>
+                  </div>
+                  <div class="section-style">
+                     <span onclick="didYouKnow()" id="myBtn">Show Less</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!--GAME-->
+      <div class="play-text">
+         <h3>PLAY</h3>
+         <p> Test your memory and see how fast you can find all the cards! </p>
+         <p>Good Luck!</p>
+      </div>
+      <span id="play"></span>
+      <div id="memory-game">
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden" ></div>
+         <div class="card random color-hidden"></div>
+         <div class="card random color-hidden"></div>
+         <div class="card random color-hidden"></div>
+         <div class="card random color-hidden"></div>
+         <div class="card random color-hidden"></div>
+         <div class="card random color-hidden"></div>
+         <div class="card random color-hidden"></div>
+      </div>
+
+      <!--MOVES AND TIMER-->
+      <div class="moves-timer-wrapper">
+         <div class="moves-counter">
+            <p>Moves: <span class="moves"> 0</span></p>
+         </div>
+         <div class="timer"></div>
+      </div>
+      <div id="reset-container">
+         <button id="reset" class="reset" type="reset" onclick="startGame()" >Reset</button>
+      </div>
+
+      <!--CONGRATULATIONS WINDOW-->
+      <div id="popup1" class="overlay">
+         <div class="popup">
+            <h2>Congratulations 🎉</h2>
+            <a class="close" href=# >×</a>
+            <div class="content-1">
+               Congratulations you're a winner 🎉🎉
+            </div>
+            <div class="content-2">
+               <p>You made <span id=finalMove> </span> moves </p>
+               <p>in <span id=totalTime> </span> </p>
+            </div>
+            <button id="play-again" onclick="playAgain()">
+            Play again 😄
+            </button>
+         </div>
+      </div>
+
+      <!--FORM-->
+      <section class="form">
+         <h3> We'd love to hear from you!</h3>
+         <br>
+         <p>If you have any questions for us, please feel free to contact us</p>
+         <div class="form-center">
+            <form action="https://formdump.codeinstitute.net/" method="post">
+               <input type="text" id="name" name="name" placeholder="Name:" class="form-control" required>
+               <input type="email" id="email" name="email" placeholder="Email:" class="form-control" required>
+               <textarea name="message" cols="30" rows="5" placeholder="Message:" class="form-control"></textarea>
+               <input type="submit" value="Send Message" class="form-control"> 
+            </form>
+         </div>
+      </section>
+
+    <!--FOOTER-->
+      <footer>
+         <div class="envelope-icon"><i class="fas fa-envelope"></i> kidsmemorygame@gmail.com</div>
+         <div class="social links">
+            <a href="https://instagram.com/" rel="noopener" target="_blank" 
+               aria-label="Visit our Instagram page (opens in a new tab)" ><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" rel="noopener" target="_blank" 
+               aria-label="Visit our Facebook page (opens in a new tab)" ><i class="fab fa-facebook"></i></a>
+         </div>
+      </footer>
+   
+   <script src="assets/js/script.js"></script>    
+   <script src="https://kit.fontawesome.com/1ef70762c3.js" crossorigin="anonymous"></script>
+   </body>
+</html>

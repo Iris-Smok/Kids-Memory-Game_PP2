@@ -1,108 +1,305 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Kids Memory Game 
 
-Welcome USER_NAME,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+You can view the deployed website [here](https://irissmok.github.io/Kids-Memory-Game-MS2/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<p align="center">
+<img src="assets/images/readme/memory-game-responsive.png" width="800" height="100%">
+</p>
 
-## Gitpod Reminders
+# UX
+The inspiration for this game was my daughter. I wanted to make a game that would have a good impact on a child's brain. As a parent I know how hard it is to keep children away from the screen, but sometimes this is inevitable. So I wanted to make a game that would be useful and fun at the same time.
+I did a little research on memory games and found out that playing memory games can improve other brain functions, such as attention, concentration, and focus. Memory games give space to critical thinking and that helps children nurture their attention to detail.  
+This project is intended for children from 3 - 7 years.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Users Stories 
+As a parent:
+- I want to make sure the content is applicable to children
+- I want my child to easily understand the purpose of the game
+- I want my child to have fun while developing memory
 
-`python3 -m http.server`
+As a player:
+- I want to have fun
+- I want to see nice and colorful game
+- I want to see nice pictures that will keep my attention 
+- I want to see my time and moves
+- I want to contact the developer for questions
 
-A blue button should appear to click: _Make Public_,
+#
+# Scope 
 
-Another blue button should appear to click: _Open Browser_.
+## Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- An simple and colorful page structure so that the user can easily find the game
+- "Play" button - takes the user to the play section
+- "How to play?" button - provides information about the game rules
+- "Did you know" section - provides fun facts about the importance of memory game and their impact on children’s memory
+- Memory board - contains 16 cards, the user must find a par for each card
+- Number of moves and time - shows the user how many moves he has taken in how much time
+- "Reset" button - user can reset the game and play again
+- "Congratulations Window" - after the user finds all 16 cards, a congratulations window appears showing the moves and time the user has achieved
+- Contact form - user can contact the game provider if he has questions or suggestions for the game
+- Footer - contains mail address and social links
 
-A blue button should appear to click: _Make Public_,
+## Future features
 
-Another blue button should appear to click: _Open Browser_.
+- Add more levels to increase difficulty
+- Add sound when user turns the card
+- When form is submitted, send a confirmation email
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#
+# Structure
 
-To log into the Heroku toolbelt CLI:
+- **Title**  
+    - located at the top of the page
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- **Play Button**  
+    - located below the title next to the "How to Play" button, takes the user to the game section
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- **How to play Button**  
+    - located below the title, next to the "Play" button, with a click a window opens that allows the user to read the rules of the game
 
-------
+-  **Did you know**  
+    - located bellow buttons, contains fun facts about how memory game affects our memory and brain development 
 
-## Release History
+-  **Play Section**  
+    - contains the title and a brief introduction, after which the game begins. In the play section, there is a memory game board that contains 16 cards. The user must find a par for each card to win the game. 
+    Moves and time - located below the game board, show the user how many moves have been used in how much time
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+-  **Contact Form**  
+    - allows the user to contact the game provider if he has questions or suggestions for the game
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+ -  **Footer**     
+    - contains mail address and social link
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+# Wireframes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Desktop View
+<p align="center">
+<img src="assets/images/wireframes/desktop-view.png" width="600" height="1000">
+</p>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+# Tablet view
+<p align="center">
+<img src="assets/images/wireframes/tablet-view.png" width="500" height="1100">
+</p>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+# Mobile View
+<p align="center">
+<img src="assets/images/wireframes/mobile-view.png" width="300" height="1200">
+</p>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+# Surface
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+# Design 
+The design of this site is made in bright and cheerful colors because they make the page cheerful and the main goal of this page is fun and of course memory training. The site is intended for children from 3 to 7 years, so the site must be colorful and easy to navigate and understand.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+It's one-page site with two parts.
+The first part is  consists of the title, the short section "Did you know?", a button that opens the game rules, and a "Play" button that takes the user to the memory game section.
+The second part is consists of the memory game section, contact form and a footer. The memory game section contains the Memory Game board under which the moves and time are located, the user can see their time and number of moves they used along the way. The user can push the reset button to reset the game and start again. 
+When all the pairs are found the congratulations message pop up with final time and moves.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## Chosen Color 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+Color palette from Coolors
+<p align="center">
+<img src="assets/images/readme/colors-palette.png" width="900" height="250">
+</p>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- **#9df57ab5** - body background color. It fits nicely with the background image. The site looks colorful and fun.
+- **#3c444c** - the main color. I choose this color because it matches nicely with the rest of the page. The color is neither too dark nor too bright.
+- **#fee73bde** - color for play, how to play and reset button. The color is cheerful. That’s why I liked it because it elevates the look of the page.
+- **#ff4f98**- color for Play btn. Fits nicely with yellow background. 
+- **#2daaf3** - color for How to play text on the button, Reset text and background of Submit.  The color goes well with yellow and pink and gives the page a cheerful look. 
+- **deeppink** - color is used for brief introduction before the board game and title of the contact form. 
+- **#a9bedb** - footer background color. I liked the color because it is neither too dark nor too bright. It fits nicely with the whole page and with a submit button.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Font 
+- Arial, sans-serif - main font
+- Indie Flower - for headings and buttons
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Media
 
-**Can I opt out?**
+**Background Image** - covering the first part of the page. It is designed in cheerful colors to make the page cheerful and fun. The picture contains animals as well as the memory game itself. I choose this image because it's children friendly and everyone loves animals.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+**Memory Game** - the images contain animals, each with a background of a different color which makes game fun and colorful. 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+# Technologies Used
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Languages 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JS](https://en.wikipedia.org/wiki/JavaScript)
 
----
+## Frameworks, Libraries & Programs Used
 
-Happy coding!
+- [Google Fonts](https://fonts.google.com/https://fonts.google.com/) - provide Indie Flower fonts for the website.
+
+- [Github](https://github.com/IrisSmok) - was used to store the project code.
+
+- [Gitpod](https://www.gitpod.io/) - was used for coding.
+
+ - [Font Awesome](https://fontawesome.com/) -was used for the "Did you know?" list icons.
+
+- [Balsamiq](https://balsamiq.com/) - was used to create site wireframes.
+
+- [Am I Responsive](http://ami.responsivedesign.is/) - to check if the site is responsive on different screen sizes.
+
+- [Tiny PNG](https://tinypng.com/) - this site is used to help me compress the images
+
+- [Birme](https://www.birme.net/?target_width=150&target_height=150) - to help me resize the photos for memory board
+
+- [Freepik](https://www.freepik.com/home) - was used for background image
+
+- [Pixabay](https://pixabay.com/) - was used for all the images in the memory game
+
+- [Beautify Tools](https://beautifytools.com/javascript-validator.php) - was used to validate JS
+
+- [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - was used to validate HTML
+
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - was used to validate CSS
+
+- [Beautify](https://www.jpkc.com/tools/beautify/) - was used to correct indentation issues and get rid of too much whitespace - HTML, CSS and JS
+
+- [Coolors](https://coolors.co/9df57a-3c444c-fee73b-ff4f98-2daaf3-a9bedb) - to make color palette
+
+
+# Testing
+- Tested on Chrome, Opera, Microsoft Edge, and Firefox desktop version browsers
+- Chrome Developer Tools are used to test the responsiveness on: Desktop, Laptop, Moto G4, Galaxy S5, iPhone 5/SE, iPhone 6,7,8, iPhone 6,7,8 Plus, iPad, iPad Pro, Galaxy Fold
+ 
+ Ensure that all user stories are achieved:
+
+**For parents:** 
+-  When entering the page, the parent can quickly and easily see the bright and nice color, images and content of the page. 
+-  Clicking on the "How to play" button, the child can read game instructions that are clear and short.
+-  The game is fun and challenging for kids. Cheerful images make it fun, while moves counter and timer make it challenging.
+
+**For user:**
+   - The game is fun for kids. Images of animals, cards that are shuffled each time a new game starts, moves counter and timer makes the game fun and challenging.
+   - Memory game is designed in bright and colorful colors. Animals images cards with colorful backgrounds make the game nice.
+   - The background image and cards images are bright and cheerful, easily capturing the user's attention
+   - A move counter and timer are placed under the memory board so that the user can see the moves and time he made during the game. When users find all 16 matches, a congratulatory pop-up window with final time and moves appears.
+
+
+I used Lighthouse tools to test my website
+<p align="center">
+<img src="assets/images/readme/lighthouse-memory-game2.png" width="400" height="100%">
+</p>
+
+## Bugs and Issues
+
+ - Play button was located inside the "a" tag, which threw a bug in the HTML Validator. I solved the problem by replacing the button tag with the span tag. 
+
+- Warning: Family names containing whitespace should be quoted. If quoting is omitted, any whitespace characters before and after the name are ignored and any sequence of whitespace characters inside the name is converted to a single space.
+warning was fixed by adding quotes to the Family names
+
+- While playing a memory game I noticed that if you press the reset button you can't turn the cards over again, only after a few seconds. The problem was solved by adding the ResetBoard function to the startGame function which allows the memory board to reset
+
+- I found an error some of the devices were not responsive, Galaxy Fold. I solved this problem by adding an extra media query - max-width 300px
+
+
+# Final Product 
+
+## Desktop View 
+ 
+<p align="center">
+<img src="assets/images/readme/final-product-desktop-view.png" width="700" height="600">
+
+<p align="center">
+<img src="assets/images/readme/final-product-desktop-view2.png" width="700" height="500">
+</p>
+
+<p align="center">
+<img src="assets/images/readme/final-product-desktop-view3.png" width="700" height="500">
+</p>
+
+
+
+## Tablet View 
+ 
+ <p align="center">
+<img src="assets/images/readme/final-product-tablet-view.png" width="500" height="700">
+</p>
+
+<p align="center">
+<img src="assets/images/readme/final-product-tablet-view2.png" width="500" height="600">
+</p>
+
+<p align="center">
+<img src="assets/images/readme/final-product-tablet-view3.png" width="500" height="700">
+</p>
+
+
+## Mobile View 
+ 
+ <p align="center">
+<img src="assets/images/readme/final-product-mobile-view.png" width="500" height="900">
+</p>
+
+ <p align="center">
+<img src="assets/images/readme/final-product-mobile-view2.png" width="500" height="900">
+</p>
+
+
+ <p align="center">
+<img src="assets/images/readme/final-product-mobile-view3.png" width="500" height="900">
+</p>
+
+
+
+# Deployment
+
+
+## GitHub Pages
+
+1. Log into GitHub and locate the repository.
+2. At the top locate the settings option.
+3. Scroll towards  the bottom of the page and locate GitHub Pages.
+4. Click on the link "Check it out here!".
+4. Under 'Source' dropdown, click 'Master' from the options.
+5. Click the save button.
+6. The site is now published, it may not be available immediately. 
+7. The site URL is visible on the green bar under the "Github Pages".
+
+## To run locally 
+ - Log into GitHub and select a repository to download.
+ - Select code and Download the ZIP file.
+ - Once the download is complete, you can extract the file and use it in your local environment.
+
+
+# Credits
+
+Memory Game:
+
+- [Marina Ferreira](https://github.com/code-sketch/memory-game) - youtube
+- [Web Dev](https://www.youtube.com/watch?v=bbb9dZotsOc) - youtube
+- [Sandra Israel](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript) - for congratulations window, timer and moves 
+
+
+## Media
+
+[Freepik](https://www.freepik.com/home) - was used for background image
+
+[Pixabay](https://pixabay.com/) - was used for all the images in the memory game
+
+
+
+## Acknowledgements
+
+- Thanks to my mentor for helpful feedback
+- Slack community for answering all my questions 
+- Big thanks to my husband Mislav for helping me test the website
+- Friend for support and helpful feedback
