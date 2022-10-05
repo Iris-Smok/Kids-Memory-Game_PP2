@@ -1,7 +1,7 @@
 # Kids Memory Game 
 
 
-You can view the deployed website [here](https://irissmok.github.io/Kids-Memory-Game-MS2/)
+You can view the deployed website [here](https://iris-smok.github.io/Kids-Memory-Game_PP2/)
 
 <p align="center">
 <img src="assets/images/readme/memory-game-responsive.png" width="800" height="100%">
